@@ -3,12 +3,11 @@
     "es6": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true
+      "experimentalObjectRestSpread": true
     },
     "sourceType": "module"
   },
@@ -16,7 +15,6 @@
     "fetch": false,
     "Headers": false
   },
-  "plugins": ["react", "react-native"],
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
     "no-cond-assign": ["error"],
@@ -136,25 +134,6 @@
     "max-params": ["error", 5],
     "max-statements": ["off"],
     "no-bitwise": ["off"],
-    "no-plusplus": ["error"],
-    "react/display-name": ["off"],
-    "jsx-quotes": ["error", "prefer-double"],
-    "react/jsx-key": ["error"],
-    "react/jsx-no-undef": ["error"],
-    "react/jsx-sort-props": 0,
-    "react/jsx-uses-react": ["error"],
-    "react/jsx-uses-vars": ["error"],
-    "react/jsx-wrap-multilines": ["off"],
-    "react/no-did-mount-set-state": ["error"],
-    "react/no-did-update-set-state": ["error"],
-    "react/no-multi-comp": 0,
-    "react/no-unknown-property": ["error"],
-    "react/prop-types": ["off"],
-    "react/react-in-jsx-scope": ["error"],
-    "react/self-closing-comp": ["error"],
-    "react-native/no-unused-styles": ["error"],
-    "react-native/split-platform-components": ["error"],
-    "react-native/no-inline-styles": ["error"],
-    "react-native/no-color-literals": ["warn"]
+    "no-plusplus": ["error"]
   }
 }
