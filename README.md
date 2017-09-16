@@ -12,10 +12,10 @@ get the a solution bootstrapped quickly, this should cover most bases.
 3. Update `.babelrc` to target different browsers (see [BrowserList](https://github.com/ai/browserslist#queries)
    to write an appropriate query).
 
-## Run Commands
+## Tasks
 
 These can be triggered using `yarn COMMAND` or `npm run COMMAND`.
 
 `build` - One time build and quit
 `watch` - Watches for file changes and builds when something has changed
-`serve` - Like watch, but runs a web server for easy front-end development
+`start` - Like watch, but runs a web server for easy front-end development
