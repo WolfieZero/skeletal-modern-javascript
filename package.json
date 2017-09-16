@@ -15,6 +15,7 @@
     "build": "webpack"
   },
   "devDependencies": {
+    "eslint": "^4.7.0",
     "webpack-dev-server": "^2.8.2"
   }
 }
