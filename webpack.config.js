@@ -3,13 +3,14 @@
 // =============================================================================
 
 const path = require('path');
-const distPath = path.resolve(__dirname, 'public');
+const sourcePath = path.resolve(__dirname, 'src');
+const distributablePath = path.resolve(__dirname, 'public');
 
 module.exports = {
-    entry: ['./src/main.js'],
+    entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: distPath
+        path: distributablePath,
     },
     module: {
         rules: [
@@ -17,19 +18,21 @@ module.exports = {
             {
                 test: /\.js$/,
                 include: [
-                  distPath
+                    sourcePath,
                 ],
                 exclude: [
-                  path.resolve(__dirname, 'node_modules')
+                    /node_modules/,
                 ],
-                loader: 'babel-loader'
-            }
-        ]
+                loader: [
+                    'babel-loader',
+                ],
+            },
+        ],
     },
     devtool: 'inline-source-map',
     devServer: {
-      contentBase: distPath,
-      compress: true,
-      port: 8080
-    }
-}
+        contentBase: distributablePath,
+        compress: true,
+        port: 8080,
+    },
+};
