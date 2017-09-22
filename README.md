@@ -19,3 +19,10 @@ These can be triggered using `yarn COMMAND` or `npm run COMMAND`.
 `build` - One time build and quit
 `watch` - Watches for file changes and builds when something has changed
 `start` - Like watch, but runs a web server for easy front-end development
+
+## Flow Support
+
+1. Run `yarn add babel-preset-flow flow-bin`
+2. in `.bablerc` add `flow` to the `presets` array.
+
+(If you're running `npm` then change `yarn add` to `npm add --save`.)
