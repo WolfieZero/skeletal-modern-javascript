@@ -130,7 +130,7 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "no-var": ["warn"],
-    "generator-star-spacing": [2, "before"],
+    "generator-star-spacing": [2, "both"],
     "max-depth": ["error", 3],
     "max-len": ["off"],
     "max-params": ["error", 5],
